@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+h1 {
+    
+    text-align: center;
+    color:rgb(56, 53, 150);
+    font-size: 55px; 
+    letter-spacing: -5px; 
+    margin: 0;           /* Remove o espaço externo entre as linhas */
+    line-height: 0.8;    /* "Aperta" o espaço vertical entre as palavras */
+    padding: 5px 0;      /* Ajuste fino se precisar de um respiro mínimo */
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+    font-family:serif;
+}
+
+header{
+    background-color: rgb(151, 205, 252);
+    margin: 0; /* Garante que não haja espaço fora */
+    padding: 20px 0;
+    width: 100%;
+}
+.grade-imagens {
+    flex: 1; 
+    padding: 0px;
+}
+.grade-imagens img{
+    width: 139px;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+    filter: brightness(0.9);
+    border-radius: 8px;
+    border: 3px solid #ffffff;
+}
+table{
+    margin: auto;
+}
+.container-principal {
+    display: flex;          /* Coloca a tabela e a barra lado a lado */
+    align-items: stretch;   /* Faz a barra lateral esticar até o final */
+    display: flex;
+    flex: 1; /* Faz o container ocupar todo o resto da altura */ 
+}
+
+footer{
+    background-color:rgb(151, 205, 252);
+    margin: 0; /* Garante que não haja espaço fora */
+    padding: 10px 0px;
+    width: 100%;
+    
+}
+footer p{
+    text-align: justify;
+    text-indent: 10px;
+    color: rgb(0, 0, 0);
+    margin: 2px 0px ;
+}
+a {
+    color: rgb(0, 0, 0) !important;
+}
+td {
+    padding: 0.5px;
+}
+.espaco{
+    width: 38px;
+}
+.linha-espaco{
+    height: 30px;
+}
+.navbar {
+    background-color:  #ffffffbc; /* mesma cor do container */
+    padding: 12px 20px;
+    color:black !important;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    color: rgb(0, 0, 0) !important;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+}
+
+.nav-links li a {
+    color: rgb(0, 0, 0) !important;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: rgb(151, 205, 252) !important;
+}
+.nav-links a.ativo {
+    border-bottom: 2px solid white;
+}
+.vitoria {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.85);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+    z-index: 9999;
+}
+
+.vitoria.ativa {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.vitoria-conteudo {
+    background: #111;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    border: 2px solid white;
+}
+
+.vitoria-conteudo h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.vitoria-conteudo button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background: rgb(151, 205, 252);
+    color: black;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.vitoria-conteudo button:hover {
+    background: #06348fbc;
+}
+.inicio button {
+    padding: 18px 40px;
+    font-size: 15px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+
+    background: rgb(151, 205, 252);
+    color: black;
+
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    transition: 0.3s;
+    border: 3px solid #06348fbc;
+}
+
+.inicio button:hover {
+    transform: scale(1.05);
+}
+.inicio div {
+    text-align: center;
+    color: white;
+}
